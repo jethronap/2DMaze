@@ -205,44 +205,9 @@ public class AStarPathFinder implements PathFinder {
             }
         }
 
-        ArrayList<Integer> path = this.reconstructPath(cameFrom, mCellGoal);
+        ArrayList<Integer> path = PathFinder.reconstructPath(cameFrom, mCellGoal);
 
         route.setPath(path);
         return route;
-    }
-
-
-    /**
-     * Reconstructs the path from the given HashMap.
-     *
-     * @param map  The map of all nodes.
-     * @param goal The goal.
-     * @return A reversed path from the goal.
-     */
-    private final ArrayList<Integer> reconstructPath(HashMap<Integer, Integer> map, MazeCell goal) {
-
-        ArrayList<Integer> nodes = new ArrayList<>();
-
-        if (map.isEmpty()) {
-            return nodes;
-        }
-
-        nodes.add(goal.getId());
-
-        // This is the id of the node that led to the goal:
-        Integer next = map.get(goal.getId());
-        nodes.add(next);
-
-        Set<Integer> keys = map.keySet();
-
-        while (keys.contains(next)) {
-
-            next = map.get(next);
-            nodes.add(next);
-        }
-
-        // Finally reverse the array:
-        Collections.reverse(nodes);
-        return nodes;
     }
 }
