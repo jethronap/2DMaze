@@ -25,7 +25,7 @@ public class DijkstraPathFinder implements PathFinder {
         this.distanceCalculator = distanceCalculator;
     }
 
-    protected class DijkstraCell<CellType extends MazeCell> {
+    protected class DijkstraCell<MazeCell> {
 
         MazeCell cell;
         int distanceToGoal = Integer.MAX_VALUE;
