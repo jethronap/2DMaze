@@ -46,6 +46,9 @@ public class DijkstraPathFinder implements PathFinder {
             if (this == other) {
                 return true;
             }
+            if (!(other instanceof DijkstraCell)) {
+                return false;
+            }
 
             return cell.equals(((DijkstraCell) other).cell);
         }
