@@ -12,7 +12,6 @@ import java.util.*;
 /**
  * Single source shortest path finding using
  * Dijkstra's algorithm
- * https://www.codingame.com/playgrounds/1608/shortest-paths-with-dijkstras-algorithm/dijkstras-algorithm
  */
 public class DijkstraPathFinder implements PathFinder {
 
@@ -157,54 +156,5 @@ public class DijkstraPathFinder implements PathFinder {
 
         route.setPath(path);
         return route;
-    }
-
-
-    private final DijkstraCell getMinDijkstraCellFromQueue(PriorityQueue<DijkstraCell<MazeCell>> queue) {
-
-        Object[] cells = queue.toArray();
-        int distance = Integer.MAX_VALUE;
-        DijkstraCell<MazeCell> cell = (DijkstraCell<MazeCell>) cells[0];
-
-        for (int c = 0; c < cells.length; ++c) {
-
-            if (((DijkstraCell<MazeCell>) cells[c]).distanceToGoal < distance) {
-                distance = ((DijkstraCell<MazeCell>) cells[c]).distanceToGoal;
-                cell = (DijkstraCell<MazeCell>) cells[c];
-            }
-        }
-        return cell;
-    }
-
-
-    private final DijkstraCell getDijkstraCellFromMazeCell(MazeCell cell,
-                                                           PriorityQueue<DijkstraCell<MazeCell>> queue) {
-
-        Object[] cells = queue.toArray();
-
-        for (int c = 0; c < cells.length; ++c) {
-
-            if (((DijkstraCell<MazeCell>) cells[c]).cell.equals(cell)) {
-                return ((DijkstraCell<MazeCell>) cells[c]);
-            }
-        }
-
-        return null;
-    }
-
-    private final void populatePriorityQueue(Maze maze, MazeCell start, PriorityQueue<DijkstraCell<MazeCell>> queue) {
-
-        // Add the source:
-        queue.add(new DijkstraCell<>(start, 0));
-
-        // All the other cells will get the maximum distance:
-        for (int c = 0; c < maze.size(); ++c) {
-
-            MazeCell cell = maze.getCell(c);
-
-            if (!cell.equals(start) && !cell.isBlocked()) {
-                queue.add(new DijkstraCell<>(cell, Integer.MAX_VALUE));
-            }
-        }
     }
 }
