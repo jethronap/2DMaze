@@ -27,16 +27,16 @@ public class DijkstraPathFinder implements PathFinder {
 
     protected class DijkstraCell<CellType extends MazeCell> {
 
-        CellType cell;
+        MazeCell cell;
         int distanceToGoal = Integer.MAX_VALUE;
 
-        public DijkstraCell(CellType cell, int distanceToGoal) {
+        public DijkstraCell(MazeCell cell, int distanceToGoal) {
             this.cell = cell;
             this.distanceToGoal = distanceToGoal;
         }
 
 
-        public DijkstraCell(CellType cell) {
+        public DijkstraCell(MazeCell cell) {
             this(cell, Integer.MAX_VALUE);
         }
 
