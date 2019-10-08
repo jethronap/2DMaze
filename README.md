@@ -10,13 +10,14 @@
 >
 >See example below to understand how cell numbering is supposed to be.
 >
->| 6 | 7 | 8 |
+| 6 | 7 | 8 |
 |---|:-:|:-:|
 | 3 | 4 | 5 |
 | 0 | 1 | 2 |
 
 
-###References:
+### References:
+
 **Dijkstra**:
 * [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 * [Dijkstra's Shortest Path Algorithm](https://brilliant.org/wiki/dijkstras-short-path-finder/)
@@ -29,7 +30,7 @@
 * [Introduction to A*](http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html)
 * [Easy A* (star) Pathfinding](https://medium.com/@nicholas.w.swift/easy-a-star-pathfinding-7e6689c7f7b2)
 
-####Books on Algorithms:
+#### Books on Algorithms:
 * [Introduction to Algorithms](http://web.karabuk.edu.tr/hakankutucu/CME222/MIT[1].Press.Introduction.to.Algorithms.2nd.Edition.eBook-TLFeBOOK.pdf)
 * [Algorithms Unlocked](http://dahlan.unimal.ac.id/files/ebooks/2013%20Algorithms_Unlocked.pdf)
 * [The Algorithms design Manual](http://mimoza.marmara.edu.tr/~msakalli/cse706_12/SkienaTheAlgorithmDesignManual.pdf)
