@@ -5,6 +5,8 @@
 >
 >You can use one of the mazes provided in [test_data](https://github.com/jethronap/2DMaze/tree/master/src/test_data) folder. Or try making one yourself.
 >
+>######**Note**: that if invalid filename is given the application exits.
+>
 >Acceptable maze format:
 >
 >                       n_rows = your number of rows
