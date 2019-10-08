@@ -6,7 +6,7 @@
 >You can use one of the mazes provided in [test_data](https://github.com/jethronap/2DMaze/tree/master/src/test_data) folder. Or try making one yourself.
 >
 > 
-######**Note**: If invalid filename is given the application exits.
+>###### **Note**: If invalid filename is given the application exits.
 >
 >Acceptable maze format:
 >
