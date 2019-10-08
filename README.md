@@ -4,13 +4,16 @@
 >It uses two different algorithmic flavours Dijkstra and AStar Search.
 >
 >You can use one of the mazes provided in [test_data](https://github.com/jethronap/2DMaze/tree/master/src/test_data) folder. Or try making one yourself.
+>
 >Acceptable maze format:
->                    ```n_rows = your number of rows
+>
+>                       n_rows = your number of rows
 >                       n_cols = your number of cols
 >                       0, O
 >                       1, X
 >                       2, x
->                       3, O```
+>                       3, O
+>                       ...
 >
 >The numbering of cells should start from the bottom left corner of your maze and continue upwards.
 >
