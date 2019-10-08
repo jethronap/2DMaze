@@ -10,7 +10,7 @@
 >
 >See example below to understand how cell numbering is supposed to be.
 >
-| 6 | 7 | 8 |
+>| 6 | 7 | 8 |
 |---|:-:|:-:|
 | 3 | 4 | 5 |
 | 0 | 1 | 2 |
