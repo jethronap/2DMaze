@@ -116,7 +116,7 @@ public class AStarPathFinder implements PathFinder {
             public int compare(AStarCell o1, AStarCell o2) {
                 if (o1.fCost > o2.fCost)
                     return 1;
-                if (o1.gCost < o2.gCost)
+                if (o1.fCost < o2.fCost)
                     return -1;
                 return 0;
             }
