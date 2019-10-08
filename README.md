@@ -11,11 +11,13 @@
 >                       n_cols = your number of cols
 >                       0, O
 >                       1, X
->                       2, x
+>                       2, X
 >                       3, O
 >                       ...
 >
->The numbering of cells should start from the bottom left corner of your maze and continue upwards.
+>On the left column is the zero-based numbering of cells and should start from the bottom left corner of your maze and continue upwards.
+>
+>Whereas on the right the blocked flag. Use `O` for open `X` for closed.
 >
 >See example below to understand how cell numbering is supposed to be.
 >
@@ -40,8 +42,8 @@
 * [Easy A* (star) Pathfinding](https://medium.com/@nicholas.w.swift/easy-a-star-pathfinding-7e6689c7f7b2)
 
 #### Books on Algorithms:
-* [Introduction to Algorithms](http://web.karabuk.edu.tr/hakankutucu/CME222/MIT[1].Press.Introduction.to.Algorithms.2nd.Edition.eBook-TLFeBOOK.pdf)
-* [Algorithms Unlocked](http://dahlan.unimal.ac.id/files/ebooks/2013%20Algorithms_Unlocked.pdf)
-* [The Algorithms design Manual](http://mimoza.marmara.edu.tr/~msakalli/cse706_12/SkienaTheAlgorithmDesignManual.pdf)
+* [Introduction to Algorithms](https://en.wikipedia.org/wiki/Introduction_to_Algorithms)
+* [Algorithms Unlocked](https://en.wikipedia.org/wiki/Algorithms_Unlocked)
+* [The Algorithms design Manual](http://algorist.com)
 
 This is a Maven project and can be run as is. Just clean and build and give it a go.
