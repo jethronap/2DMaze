@@ -25,7 +25,7 @@ public class DijkstraPathFinder implements PathFinder {
         this.distanceCalculator = distanceCalculator;
     }
 
-    protected class DijkstraCell<MazeCell> {
+    protected class DijkstraCell {
 
         MazeCell cell;
         int distanceToGoal = Integer.MAX_VALUE;
@@ -85,11 +85,11 @@ public class DijkstraPathFinder implements PathFinder {
         }
 
         // Cells not explored yet:
-        PriorityQueue<DijkstraPathFinder.DijkstraCell<MazeCell>> open =
-                new PriorityQueue<>(new Comparator<DijkstraPathFinder.DijkstraCell<MazeCell>>() {
+        PriorityQueue<DijkstraPathFinder.DijkstraCell> open =
+                new PriorityQueue<>(new Comparator<DijkstraPathFinder.DijkstraCell>() {
                     @Override
-                    public int compare(DijkstraPathFinder.DijkstraCell<MazeCell> o1,
-                                       DijkstraPathFinder.DijkstraCell<MazeCell> o2) {
+                    public int compare(DijkstraPathFinder.DijkstraCell o1,
+                                       DijkstraPathFinder.DijkstraCell o2) {
 
                         if (o1.distanceToGoal > o2.distanceToGoal)
                             return 1;
@@ -105,7 +105,7 @@ public class DijkstraPathFinder implements PathFinder {
         // This is where the path is stored:
         HashMap<Integer, Integer> cameFrom = new HashMap<>();
 
-        DijkstraCell<MazeCell> source = new DijkstraCell<>(mCellStart, 0);
+        DijkstraCell source = new DijkstraCell(mCellStart, 0);
 
         // Add the source:
         open.add(source);
