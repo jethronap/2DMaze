@@ -1,12 +1,11 @@
-package pathfinder;
-
-
 import algorithms.AStarPathFinder;
 import algorithms.DijkstraPathFinder;
 import algorithms.EuclideanCalculator;
 import maze.Maze;
 import maze.MazeBuilder;
 import maze.Point;
+import pathfinder.PathFinder;
+import pathfinder.Route;
 
 import java.io.File;
 import java.io.IOException;
