@@ -4,8 +4,12 @@
 >It uses two different algorithmic flavours Dijkstra and AStar Search.
 >
 >You can use one of the mazes provided in [test_data](https://github.com/jethronap/2DMaze/tree/master/src/test_data) folder. Or try making one yourself.
->Acceptable maze formats consist of two columns where on the first row `n_rows = ` is provided; on the second provide `n_cols = `. 
->On the following rows provide cell id and blocked flag. Please use `O` for open `X` for closed. 
+>Acceptable maze format:```n_rows = your number of rows```
+>                       ```n_cols = your number of cols```
+>                       ```0, O```
+>                       ```1, X```
+>                       ```2, x```
+>                       ```3, O```
 >The numbering of cells should start from the bottom left corner of your maze and continue upwards.
 >
 >See example below to understand how cell numbering is supposed to be.
