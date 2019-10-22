@@ -32,10 +32,10 @@ public class Maze {
 
 
     /**
-     * Returns the c-th main.java.maze cell
+     * Returns the c-th maze cell
      *
      * @param c the index of the cell.
-     * @return the main.java.maze cell at given index.
+     * @return the maze cell at given index.
      */
     public final MazeCell getCell(int c) {
         return this.cells.get(c);
@@ -43,9 +43,9 @@ public class Maze {
 
 
     /**
-     * How many cells is the main.java.maze currently holding.
+     * How many cells is the maze currently holding.
      *
-     * @return the current size of the main.java.maze.
+     * @return the current size of the maze.
      */
     public final int size() {
         return this.cells.size();
@@ -81,7 +81,7 @@ public class Maze {
 
 
     /**
-     * Creates an x * y main.java.maze.
+     * Creates an x * y maze.
      *
      * @param xWidth Cells in x direction.
      * @param yWidth Cells in y direction.
@@ -98,9 +98,9 @@ public class Maze {
 
 
     /**
-     * Adds a cell to the main.java.maze.
+     * Adds a cell to the maze.
      *
-     * @param cell A main.java.maze cell.
+     * @param cell A maze cell.
      */
     public final void addCell(MazeCell cell) {
         if (cell == null) {
@@ -112,7 +112,7 @@ public class Maze {
 
 
     /**
-     * Finds a cell in the main.java.maze.
+     * Finds a cell in the maze.
      * @param coordinates Coordinates of the cell.
      * @return The respective cell. Otherwise, null(i.e. cell not found).
      */

@@ -10,8 +10,8 @@ import java.io.*;
 public class MazeBuilder {
 
     /**
-     * Builds a main.java.maze from a given file.
-     * @param filename The name of the file that contains the main.java.maze connectivity.
+     * Builds a maze from a given file.
+     * @param filename The name of the file that contains the maze connectivity.
      * @return A maze.
      */
     public static Maze build(String filename) throws IOException {
@@ -171,7 +171,7 @@ public class MazeBuilder {
 
 
     /**
-     * Checks for empty lines in the maze file
+     * Checks for empty lines in the maze file.
      * @param line The given line.
      */
     protected static void checkNullLine(String line) {
@@ -183,7 +183,7 @@ public class MazeBuilder {
 
     /**
      * Checks each line of the given maze file.
-     * @param lineIs The given format
+     * @param lineIs The given format.
      * @param lineShouldBe The expected format.
      */
     protected static void checkLineData(String[] lineIs, String[] lineShouldBe) {
@@ -223,8 +223,8 @@ public class MazeBuilder {
     /**
      * Returns true if given string can be parsed to integer.
      *
-     * @param s The given string
-     * @return Boolean
+     * @param s The given string.
+     * @return Boolean.
      */
     protected static boolean isInteger(String s) {
         try {
@@ -241,7 +241,7 @@ public class MazeBuilder {
     /**
      * Trims a given array.
      *
-     * @param array The array to trim
+     * @param array The array to trim.
      */
     protected static final void trimArray(String[] array) {
 
